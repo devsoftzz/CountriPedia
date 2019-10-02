@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/flag_pop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+            <RelativeLayout
+                android:padding="16dp"
+                android:id="@+id/dataview"
+                android:layout_below="@id/flag_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_account_balance_black_24dp"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/lable"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/capital"
+                    android:labelFor="@id/alpha2"
+                    android:text="Alpha2Code : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/alpha2"
+                    android:layout_below="@id/capital"
+                    android:layout_toEndOf="@id/lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN"/>
+
+                <TextView
+                    android:id="@+id/lable1"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lable"
+                    android:labelFor="@id/region"
+                    android:text="Region : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/region"
+                    android:layout_below="@id/lable"
+                    android:layout_toEndOf="@id/lable1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asia"/>
+
+                <TextView
+                    android:id="@+id/lable2"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lable1"
+                    android:labelFor="@id/population"
+                    android:text="Area : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/area"
+                    android:layout_below="@id/lable1"
+                    android:layout_toEndOf="@id/lable2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78520"/>
+
+                <TextView
+                    android:id="@+id/lable5"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lable2"
+                    android:labelFor="@id/population"
+                    android:text="Population : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/population"
+                    android:layout_below="@id/lable2"
+                    android:layout_toEndOf="@id/lable5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78520"/>
+
+                <TextView
+                    android:id="@+id/lable3"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lable5"
+                    android:labelFor="@id/timezone"
+                    android:text="Timezone : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_below="@id/lable5"
+                    android:layout_toEndOf="@id/lable3"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/timezone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/lable4"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timezone"
+                    android:labelFor="@id/cur"
+                    android:text="Currency : "
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_below="@id/timezone"
+                    android:layout_toEndOf="@id/lable4"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/cur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/map"
+            android:drawableLeft="@drawable/ic_map_black_24dp"
+            android:text="See MAP"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/info"
+            android:paddingStart="16dp"
+            android:drawableLeft="@drawable/ic_info_black_24dp"
+            android:text="More Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            />
+    </LinearLayout>
+</RelativeLayout>

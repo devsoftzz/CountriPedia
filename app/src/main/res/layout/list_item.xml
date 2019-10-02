@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/ll"
+    >
+
+    <RelativeLayout
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CFF1FF">
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/country"
+            android:layout_below="@id/flag"
+            android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+            android:drawablePadding="4dp"
+            android:text="India"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Country Name"/>
+        <TextView
+            android:id="@+id/capital"
+            android:layout_below="@id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="4dp"
+            android:text="Delhi"
+            android:textColor="#535353"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_marginEnd="-8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
